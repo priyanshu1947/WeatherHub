@@ -38,6 +38,8 @@
     
 **Screenshots**
     ![image](https://github.com/priyanshu1947/WeatherHub/assets/70458921/088355e5-7896-442b-b413-194ba513ea46)
+    ![image](https://github.com/priyanshu1947/WeatherHub/assets/70458921/0360fdc4-edb5-4f26-b865-2242f2e584af)
+
 
 
 # Getting Started with Create React App
