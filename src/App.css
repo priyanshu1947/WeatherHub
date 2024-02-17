@@ -1,29 +1,26 @@
 html {
   background-color: #e0e0e0;
-
 }
 
 .app-name {
   font-size: 2.3rem;
 }
 
-
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1440px;
-  height: 90vh;
-  text-align: center;
+  max-width: 600px; /* Set a maximum width for better readability on larger screens */
   margin: 35px auto;
-  border-radius: 50px;
+  border-radius: 20px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .city-search {
-  width: 200px;
+  width: 100%;
   box-sizing: border-box;
   border: 2px solid #38c43a;
   outline: none;
@@ -33,12 +30,7 @@ html {
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
-}
-
-.city-search:focus {
-  width: 60%;
 }
 
 .city-name {
@@ -55,14 +47,14 @@ h2 {
 }
 
 .icon-temp {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #0c42c1;
   text-align: center;
 }
 
 .deg {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .des-wind {
@@ -70,10 +62,23 @@ h2 {
 }
 
 .error-message {
-  display: block;
   text-align: center;
   color: rgb(204, 13, 13);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    max-width: 800px;
+  }
+
+  .icon-temp {
+    font-size: 4rem;
+  }
+
+  .deg {
+    font-size: 2rem;
+  }
 }
